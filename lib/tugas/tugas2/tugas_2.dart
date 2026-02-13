@@ -20,37 +20,24 @@ class DeskripsiTanaman extends StatelessWidget {
         margin: EdgeInsets.symmetric(horizontal: 16),
         child: Column(
           children: [
-            //Cabai
+            //Cabai using expanded
             Row(
               children: [
                 Expanded(
-                  flex: 2,
                   child: Container(
                     margin: EdgeInsets.only(top: 32, right: 4),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: SizedBox.fromSize(
-                        size: Size.fromRadius(70),
-                        child: Image.asset(
-                          'assets/images/cabai_rawit.webp',
-                          fit: BoxFit.cover,
-                        ),
-                      ),
+                    child: Image.asset(
+                      'assets/images/cabai_rawit.webp',
+                      fit: BoxFit.cover,
                     ),
                   ),
                 ),
                 Expanded(
                   child: Container(
                     margin: EdgeInsets.only(top: 32, left: 4),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: SizedBox.fromSize(
-                        size: Size.fromRadius(70),
-                        child: Image.asset(
-                          'assets/images/cabai_rawit2.jpg',
-                          fit: BoxFit.cover,
-                        ),
-                      ),
+                    child: Image.asset(
+                      'assets/images/cabai_rawit2.jpg',
+                      fit: BoxFit.cover,
                     ),
                   ),
                 ),
@@ -85,7 +72,7 @@ class DeskripsiTanaman extends StatelessWidget {
             Column(
               children: [
                 Container(
-                  margin: EdgeInsets.only(top: 16, bottom: 40),
+                  margin: EdgeInsets.only(bottom: 100),
                   padding: EdgeInsets.symmetric(horizontal: 20, vertical: 16),
                   decoration: BoxDecoration(
                     color: Color.fromARGB(255, 175, 238, 175),

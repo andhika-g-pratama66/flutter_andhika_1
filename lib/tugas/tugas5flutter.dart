@@ -41,6 +41,7 @@ class _Tugas5ScreenState extends State<Tugas5Screen> {
         onPressed: () {
           counter--;
           setState(() {});
+          print('FloatingActionButton di Klik');
         },
         splashColor: Colors.green.shade200,
         child: Icon(Icons.exposure_minus_1),
@@ -61,7 +62,7 @@ class _Tugas5ScreenState extends State<Tugas5Screen> {
               splashColor: Colors.green.shade100,
               onTap: () {
                 setState(() {
-                  // print('Inkwell Disentuh');
+                  print('Inkwell Disentuh');
                 });
                 showButton = !showButton;
               },
@@ -79,7 +80,7 @@ class _Tugas5ScreenState extends State<Tugas5Screen> {
                   onPressed: () {
                     setState(() {
                       toggleFavorite();
-                      // print('IconButton Disentuh');
+                      print('IconButton Disentuh');
                     });
                   },
                 ),
@@ -93,7 +94,7 @@ class _Tugas5ScreenState extends State<Tugas5Screen> {
 
               onTap: () {
                 setState(() {
-                  // print('Inkwell Disentuh');
+                  print('Inkwell Disentuh');
                 });
                 showDescription = false;
                 showPanduan = false;
@@ -115,7 +116,7 @@ class _Tugas5ScreenState extends State<Tugas5Screen> {
                       onPressed: () {
                         setState(() {
                           toggleFavorite();
-                          // print('IconButton Disentuh');
+                          print('IconButton Disentuh');
                         });
                       },
                     ),
@@ -127,7 +128,7 @@ class _Tugas5ScreenState extends State<Tugas5Screen> {
                           toggleDescription();
                           showPanduan = false;
                           setState(() {
-                            // print('TextButton di klik');
+                            print('TextButton di klik');
                           });
                         },
                         child: Text('Deskripsi'),
@@ -136,7 +137,7 @@ class _Tugas5ScreenState extends State<Tugas5Screen> {
                       ElevatedButton(
                         onPressed: () {
                           setState(() {
-                            // print('ElevatedButton di Klik');
+                            print('ElevatedButton di Klik');
                             togglePanduan();
                             showDescription = false;
                           });
@@ -225,15 +226,21 @@ class _Tugas5ScreenState extends State<Tugas5Screen> {
                 GestureDetector(
                   onTap: () {
                     counter++;
-                    setState(() {});
+                    setState(() {
+                      print('1 tap ');
+                    });
                   },
                   onDoubleTap: () {
                     counter += 2;
-                    setState(() {});
+                    setState(() {
+                      print('double tap');
+                    });
                   },
                   onLongPress: () {
                     counter += 3;
-                    setState(() {});
+                    setState(() {
+                      print('long press di Klik');
+                    });
                   },
                   child: Text(
                     counter.toString(),

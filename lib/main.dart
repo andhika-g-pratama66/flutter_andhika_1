@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_andhika_1/day_7/day_7.dart';
-import 'package:flutter_andhika_1/day_8/day_8.dart';
-import 'package:flutter_andhika_1/practice/home.dart';
-import 'package:flutter_andhika_1/tugas/tugas3flutter.dart';
-import 'package:flutter_andhika_1/tugas/tugas4flutter.dart';
+// import 'package:flutter_andhika_1/day_10/day_10.dart';
+// import 'package:flutter_andhika_1/day_7/day_7.dart';
+// import 'package:flutter_andhika_1/day_8/day_8.dart';
+// import 'package:flutter_andhika_1/practice/home.dart';
+// import 'package:flutter_andhika_1/tugas/tugas3flutter.dart';
+// import 'package:flutter_andhika_1/tugas/tugas4flutter.dart';
+import 'package:flutter_andhika_1/tugas/tugas5flutter.dart';
+
 // import 'package:flutter/rendering.dart';
 
 // import 'package:flutter_andhika_1/tugas/tugas2/tugas_2.dart';
@@ -12,6 +15,7 @@ import 'package:flutter_andhika_1/tugas/tugas4flutter.dart';
 
 void main() {
   // debugPaintSizeEnabled = true;
+
   runApp(const MyApp());
 }
 
@@ -43,14 +47,15 @@ class MyApp extends StatelessWidget {
           seedColor: const Color.fromARGB(181, 38, 155, 3),
         ),
       ),
-      //home: MyProfile()
 
+      //home: MyProfile()
       // home: Day7Screen(),
       // home: Day8Screen(),
       // home: DeskripsiTanaman(),
       // home: MyHomePage(),
       // home: MyFormTugas3(),
-      home: FormTugas4(),
+      // home: FormTugas4(),
+      home: Tugas5Screen(),
     );
   }
 }

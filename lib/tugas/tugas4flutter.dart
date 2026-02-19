@@ -6,7 +6,7 @@ class FormTugas4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Registrasi Tanaman')),
+      appBar: AppBar(title: Text('Registrasi Tanaman'), centerTitle: true),
       body: ListView(
         physics: BouncingScrollPhysics(),
         children: [
@@ -69,12 +69,17 @@ class FormTugas4 extends StatelessWidget {
                 ),
                 SizedBox(height: 32),
                 Text('List Tanaman', style: TextStyle(fontSize: 24)),
-                ListTile(
-                  title: Text('Wortel'),
-                  leading: Image.asset('assets/images/carrot.png'),
-                  focusColor: Colors.green.shade50,
-                  contentPadding: EdgeInsets.all(8),
-                  subtitle: Text('Sayuran'),
+                InkWell(
+                  borderRadius: BorderRadius.circular(20),
+                  splashColor: Colors.green.shade100,
+                  onTap: () {},
+                  child: ListTile(
+                    title: Text('Wortel'),
+                    leading: Image.asset('assets/images/carrot.png'),
+
+                    contentPadding: EdgeInsets.all(8),
+                    subtitle: Text('Sayuran'),
+                  ),
                 ),
                 ListTile(
                   title: Text('Stroberi'),

@@ -13,6 +13,8 @@ class _DatePickerT7State extends State<DatePickerT7> {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         TextButton.icon(
           onPressed: () async {

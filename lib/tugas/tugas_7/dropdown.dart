@@ -12,6 +12,8 @@ class _DropdownProductState extends State<DropdownProduct> {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Text('Pilih Kategori Produk', style: TextStyle(fontSize: 20)),
         DropdownButton<String>(

@@ -12,6 +12,8 @@ class _TimePickerT7State extends State<TimePickerT7> {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         TextButton(
           onPressed: () async {

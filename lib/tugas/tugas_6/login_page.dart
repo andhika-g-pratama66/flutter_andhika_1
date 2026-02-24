@@ -1,6 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_andhika_1/tugas/tugas_6/home_page.dart';
+import 'package:flutter_andhika_1/tugas/tugas_6/drawer.dart';
+import 'package:flutter_andhika_1/tugas/tugas_6/nav_bar.dart';
 import 'package:flutter_andhika_1/tugas/tugas_6/register_page.dart';
 
 class LoginPage extends StatefulWidget {
@@ -77,8 +78,8 @@ class _LoginPageState extends State<LoginPage> {
                     },
                     child: Icon(
                       passwordObscured
-                          ? Icons.visibility_off
-                          : Icons.visibility,
+                          ? Icons.visibility
+                          : Icons.visibility_off,
                     ),
                   ),
                 ),
@@ -125,7 +126,7 @@ class _LoginPageState extends State<LoginPage> {
               onPressed: () {
                 Navigator.pushReplacement(
                   context,
-                  MaterialPageRoute(builder: (context) => const HomePage()),
+                  MaterialPageRoute(builder: (context) => const DrawerPage()),
                 );
                 print('login');
               },

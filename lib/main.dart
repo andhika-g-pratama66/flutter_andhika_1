@@ -8,6 +8,7 @@ import 'package:flutter_andhika_1/day_11/first_screen.dart';
 // import 'package:flutter_andhika_1/tugas/tugas4flutter.dart';
 import 'package:flutter_andhika_1/tugas/tugas5flutter.dart';
 import 'package:flutter_andhika_1/tugas/tugas_6/login_page.dart';
+import 'package:flutter_andhika_1/tugas/tugas_7/tugas7flutter.dart';
 
 // import 'package:flutter/rendering.dart';
 
@@ -29,6 +30,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+
+      supportedLocales: const [
+        Locale('en', ''), // English
+        Locale('es', ''), // Spanish, etc.
+        // Add other locales you want to support
+      ],
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -58,7 +65,8 @@ class MyApp extends StatelessWidget {
       // home: MyFormTugas3(),
       // home: FormTugas4(),
       // home: Tugas5Screen(),
-      home: LoginPage(),
+      // home: LoginPage(),
+      home: Tugas7Flutter(),
     );
   }
 }

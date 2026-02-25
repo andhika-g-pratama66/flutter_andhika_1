@@ -31,7 +31,6 @@ class _Tugas7FlutterState extends State<Tugas7Flutter> {
 
   static const List<Widget> widgetOptions = <Widget>[
     HomePageT7(),
-
     CheckboxT7(),
     DarkMode(),
     DropdownProduct(),

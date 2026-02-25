@@ -64,6 +64,7 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
+    - lib/tugas/tugas_9/data/daftar_tanaman.json
   
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -21,7 +21,7 @@ class _DatePickerT7State extends State<DatePickerT7> {
             final DateTime? picked = await showDatePicker(
               context: context,
               initialDate: DateTime.now(),
-              firstDate: DateTime(1900),
+              firstDate: DateTime(1950),
               lastDate: DateTime(2100),
               locale: const Locale('en', ''),
             );
@@ -35,7 +35,7 @@ class _DatePickerT7State extends State<DatePickerT7> {
         ),
         Text(
           selectedDate != null
-              ? "Selected Date: $selectedDate "
+              ? "Selected Date: ${selectedDate?.day}/${selectedDate?.month}/${selectedDate?.year} "
               : 'Silahkan Pilih Tanggal',
         ),
       ],

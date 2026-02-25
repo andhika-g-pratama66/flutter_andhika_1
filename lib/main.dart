@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_andhika_1/day_14/day_14_screen.dart';
 
 import 'package:flutter_andhika_1/tugas/tugas_7/tugas_7_8_flutter.dart';
+import 'package:flutter_andhika_1/tugas/tugas_9/tugas_9_screen.dart';
 
 // import 'package:flutter/rendering.dart';
 
@@ -45,7 +47,7 @@ class MyApp extends StatelessWidget {
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
         colorScheme: .fromSeed(
-          seedColor: const Color.fromARGB(181, 38, 155, 3),
+          seedColor: const Color.fromARGB(181, 76, 155, 3),
         ),
       ),
 
@@ -58,7 +60,8 @@ class MyApp extends StatelessWidget {
       // home: FormTugas4(),
       // home: Tugas5Screen(),
       // home: LoginPage(),
-      home: Tugas7Flutter(),
+      // home: Tugas7Flutter(),
+      home: Tugas9Screen(),
     );
   }
 }

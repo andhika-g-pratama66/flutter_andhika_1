@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+// import 'package:flutter_andhika_1/day_10/latihan_3.dart';
 import 'package:flutter_andhika_1/day_14/day_14_screen.dart';
+import 'package:flutter_andhika_1/tugas/tugas_10/registration.dart';
 
-import 'package:flutter_andhika_1/tugas/tugas_7/tugas_7_8_flutter.dart';
+import 'package:flutter_andhika_1/tugas/tugas_6/login_page.dart';
 import 'package:flutter_andhika_1/tugas/tugas_9/tugas_9_screen.dart';
 
 // import 'package:flutter/rendering.dart';
@@ -61,7 +63,7 @@ class MyApp extends StatelessWidget {
       // home: Tugas5Screen(),
       // home: LoginPage(),
       // home: Tugas7Flutter(),
-      home: Tugas9Screen(),
+      home: RegisterPageTugas10(),
     );
   }
 }

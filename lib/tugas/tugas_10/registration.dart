@@ -2,6 +2,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_andhika_1/extension/navigator.dart';
 import 'package:flutter_andhika_1/tugas/tugas_10/home_tugas_10.dart';
+import 'package:flutter_andhika_1/tugas/tugas_10/login_page.dart';
 import 'package:flutter_andhika_1/tugas/tugas_6/drawer.dart';
 import 'package:flutter_andhika_1/tugas/tugas_6/login_page.dart';
 
@@ -50,7 +51,7 @@ class _RegisterPageTugas10State extends State<RegisterPageTugas10> {
                             Navigator.pushReplacement(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => const LoginPage(),
+                                builder: (context) => const LoginPageTugas10(),
                               ),
                             );
                           },
@@ -266,7 +267,7 @@ class _RegisterPageTugas10State extends State<RegisterPageTugas10> {
                                         backgroundColor: Colors.green.shade700,
                                       ),
                                       onPressed: () {
-                                        context.pushReplacement(
+                                        context.push(
                                           HomeTugas10(
                                             text: nameController.text,
                                           ),

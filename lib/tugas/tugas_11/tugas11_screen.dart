@@ -139,7 +139,7 @@ class _Tugas11ScreenState extends State<Tugas11Screen> {
                   width: double.infinity,
                   child: ElevatedButton(
                     onPressed: () {
-                      context.push(UserListT11());
+                      context.pushAndRemoveAll(UserListT11());
                     },
                     child: Text('Lihat List User'),
                   ),

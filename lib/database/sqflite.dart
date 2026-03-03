@@ -36,4 +36,23 @@ class DBHelper {
     final List<Map<String, dynamic>> results = await dbs.query("userList");
     return results.map((e) => UserModel.fromMap(e)).toList();
   }
+
+  static Future<int> updateUser(UserModel user) async {
+    final dbs = await db();
+    if (user.id == null) {
+      throw Exception('ID wajib ada');
+    }
+    return dbs.update(
+      'userList',
+      user.toMap(),
+      where: 'id = ?',
+      whereArgs: [user.id],
+    );
+  }
+
+  static Future<int> deleteUser(int id) async {
+    final dbs = await db();
+
+    return dbs.delete('userList', where: 'id = ?', whereArgs: [id]);
+  }
 }

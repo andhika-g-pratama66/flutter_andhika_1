@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_andhika_1/tugas/tugas_14/api/get_wallpaper.dart';
 import 'package:flutter_andhika_1/tugas/tugas_14/models/wallpaper_models.dart';
+import 'package:flutter_andhika_1/tugas/tugas_14/view/wallpaper_detail.dart';
 
 class WallpaperResultPage extends StatelessWidget {
   final String query; // Receive the search term
@@ -35,11 +36,22 @@ class WallpaperResultPage extends StatelessWidget {
                 final item = wallpapers[index];
                 return Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(12),
-                    child: Image.network(
-                      item.thumbs?.large ?? "",
-                      fit: BoxFit.cover,
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              WallpaperDescription(id: item.id!),
+                        ),
+                      );
+                    },
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(12),
+                      child: Image.network(
+                        item.thumbs?.large ?? "",
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                 );

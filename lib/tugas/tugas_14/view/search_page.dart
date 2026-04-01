@@ -1,6 +1,5 @@
 import 'dart:developer';
 
-import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_andhika_1/database/preference.dart';
 import 'package:flutter_andhika_1/tugas/tugas_14/view/wallpaper_result.dart';
@@ -60,10 +59,10 @@ class _SearchPageState extends State<SearchPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: _buildSearchBar()),
       body: SafeArea(
         child: Column(
           children: [
-            _buildSearchBar(),
             if (_history.isNotEmpty) _buildHistoryHeader(),
             _buildHistoryList(),
           ],
@@ -74,29 +73,19 @@ class _SearchPageState extends State<SearchPage> {
 
   Widget _buildSearchBar() {
     return Padding(
-      padding: const EdgeInsets.only(top: 16.0, right: 32, left: 8),
-      child: Row(
-        children: [
-          const BackButton(),
-          const SizedBox(width: 8),
-          Expanded(
-            child: TextField(
-              autofocus: true,
-              controller: _searchController,
-              decoration: InputDecoration(
-                hintText: "Enter keyword...",
-                suffixIcon: IconButton(
-                  icon: const Icon(Icons.search),
-                  onPressed: () => _handleSearch(_searchController.text),
-                ),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              ),
-              onSubmitted: _handleSearch,
-            ),
+      padding: const EdgeInsets.all(8.0),
+      child: TextField(
+        autofocus: true,
+        controller: _searchController,
+        decoration: InputDecoration(
+          hintText: "Enter keyword...",
+          suffixIcon: IconButton(
+            icon: const Icon(Icons.search),
+            onPressed: () => _handleSearch(_searchController.text),
           ),
-        ],
+          focusedBorder: UnderlineInputBorder(borderRadius: BorderRadius.zero),
+        ),
+        onSubmitted: _handleSearch,
       ),
     );
   }

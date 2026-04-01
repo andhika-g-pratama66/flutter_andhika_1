@@ -33,8 +33,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark(useMaterial3: true).copyWith(
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.black12,
-          brightness: Brightness
-              .dark, // Ensures the seed generates dark-compatible colors
+          brightness: Brightness.dark,
         ),
       ),
       home: const WallpaperListScreen(),

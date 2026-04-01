@@ -69,7 +69,7 @@ class _WallpaperDescriptionState extends State<WallpaperDescription> {
     return Scaffold(
       appBar: AppBar(
         // FIX: more descriptive than "Detail"
-        title: Text(_currentId),
+        title: Text('Detail'),
         centerTitle: true,
       ),
       body: FutureBuilder<DataWallpaperById>(

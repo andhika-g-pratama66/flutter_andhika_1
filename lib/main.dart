@@ -5,6 +5,9 @@ import 'package:flutter_andhika_1/tugas/tugas_10/registration.dart';
 import 'package:flutter_andhika_1/tugas/tugas_11/tugas11_screen.dart';
 import 'package:flutter_andhika_1/tugas/tugas_14/view/home.dart';
 import 'package:flutter_andhika_1/tugas/tugas_14/view/tugas_14_screen.dart';
+import 'package:flutter_andhika_1/tugas/tugas_15/views/login.dart';
+import 'package:flutter_andhika_1/tugas/tugas_15/views/profile.dart';
+import 'package:flutter_andhika_1/tugas/tugas_15/views/register.dart';
 
 import 'package:flutter_andhika_1/tugas/tugas_6/login_page.dart';
 import 'package:flutter_andhika_1/tugas/tugas_9/tugas_9_screen.dart';
@@ -32,11 +35,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false, // Optional: hides the debug banner
       theme: ThemeData.dark(useMaterial3: true).copyWith(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.black12,
+          seedColor: Colors.black87,
           brightness: Brightness.dark,
         ),
       ),
-      home: const WallpaperListScreen(),
+      home: const LoginUserT15(),
     );
   }
 }
